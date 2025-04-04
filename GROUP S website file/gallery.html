@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - UMSSN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="loogo.png"  class="logo">
+                <div>
+                    <h1>UGANDA MARTYRS SENIOR SECONDARY SCHOOL</h1>
+                    <p class="motto">Perseverance And Success</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html" >Academics</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>School Gallery</h2>
+                <p>A visual journey through life at GONGOS</p>
+            </div>
+        </section>
+
+        <section class="gallery-content">
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-button active" data-filter="all">All</button>
+                    <button class="filter-button" data-filter="campus">Campus</button>
+                    <button class="filter-button" data-filter="events">Events</button>
+                    <button class="filter-button" data-filter="sports">Sports</button>
+                    <button class="filter-button" data-filter="academics">Academics</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="campus">
+                        <img src="\pictures\exterioradmin.jpeg" alt="School Building" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>Our Main Campus</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="sports">
+                        <img src="\pictures\tag of war.jpg" alt="Science Fair" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>Annual  Sports Day</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="sports">
+                        <img src="\pictures\sports.jpg"  class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>Football </p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="\pictures\health camp.jpg" alt="Health Camp" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>Health Camp</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="campus">
+                        <img src="\pictures\holymary.jpeg" alt="Mother Mary" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>Mother Mary prayer Area </p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="academics">
+                        <img src="\pictures\inhouse seminar.jpeg" alt="Library" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>inhouse seminar</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="campus">
+                        <img src="\pictures\boys section.jpeg"  class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>Boys' Dormitory</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item" data-category="events">
+                        <img src="\pictures\chior master.jpg" alt="Music Concert" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>Choir master</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="academics">
+                        <img src="\pictures\ben.jpg" alt="Music Concert" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>class of 2023</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <img src="\pictures\basilica.jpeg" alt="Music Concert" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <p>Namugongo Basilica</p>
+                        </div>
+                    </div>
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-image">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Kyaliwajjala, Namugongo</p>
+                    <p>Phone:+(256) 776501388 or +(256) 745947775</p>
+                    <p>Email: info@umssn.co.ug</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UMSSN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
